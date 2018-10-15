@@ -1,0 +1,17 @@
+- virtual environment for python
+  - where project specific dependencies will be installed project specific only
+  - they wont be installed in the global python environment
+  - every python project will have its own set of dependencies
+  - create a virtual env
+    - python3 already comes with a command!
+    - python3 -m venv <name of ur venv>
+    - source <name of ur venv>/bin/activate
+    - deactivate (come out of the virtual env)
+    - source <name of ur env>/bin/activate
+    - pip install flask
+- For easy environment variable management
+  - Virtual env
+    - pip install python-dotenv
+    - .flaskenv
+      - FLASK_APP=server.py
+      - FLASK_DEBUG=1 #(for auto reloading of changes and not requiring to restart the server everytime)
