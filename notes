@@ -15,3 +15,16 @@
     - .flaskenv
       - FLASK_APP=server.py
       - FLASK_DEBUG=1 #(for auto reloading of changes and not requiring to restart the server everytime)
+
+- mysql-connector
+  - MySQLConnection
+    - Lower level way of interacting with the database (RDMS)
+    - Need to write SQL
+  -SQLAlchemy
+    - Play only with python objects - Internally they will get converted to SQL
+    - ORM (Object relational mapping)
+      - Class             Table
+      - Objects           Rows
+      - Properties of
+      the object          Column data for the rows
+    - As a developer, we work only with python object world
